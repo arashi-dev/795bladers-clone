@@ -4,9 +4,13 @@
  */
 await import("./src/env.mjs");
 
-/** @type {import("next").NextConfig} */
-const config = {
+import withNextIntl from 'next-intl/plugin';
+
+const config = withNextIntl(
+  './src/utils/i18n.ts'
+)({
   reactStrictMode: true,
-};
+});
+
 
 export default config;
