@@ -4,10 +4,20 @@ import plugin from "tailwindcss/plugin"
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        avenir: ["var(--font-avenir)"],
+      },
+    },
   },
   plugins: [
-    plugin(({ addComponents }) => {
+    plugin(({ addComponents, matchUtilities }) => {
+      matchUtilities({
+        "grid-area": value => ({
+          gridArea: value
+        }),
+      })
+
       addComponents({
         ".no-scrollbar": {
           msOverflowStyle: "none",
