@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import LocaleSelect from "./LocaleSelect";
+import { useTranslations } from "next-intl";
 
 const LogoIcon: React.FC = () => {
   return (
@@ -35,14 +36,16 @@ const LogoIcon: React.FC = () => {
   );
 };
 
-const links = [
-  { label: "bikes", href: "#" },
-  { label: "pedals", href: "#" },
-  { label: "apparel", href: "#" },
-  { label: "components", href: "#" },
-];
-
 const Header: React.FC = () => {
+  const t = useTranslations("Navbar");
+
+  const links = [
+    { label: t("bikes"), href: "#" },
+    { label: t("pedals"), href: "#" },
+    { label: t("apparel"), href: "#" },
+    { label: t("components"), href: "#" },
+  ];
+
   return (
     <div className="absolute bottom-auto left-0 right-0 top-0 mx-auto grid h-[4.5rem] auto-cols-fr grid-cols-[.25fr_1fr_.25fr] items-center justify-start px-[1.2vw]">
       <Link

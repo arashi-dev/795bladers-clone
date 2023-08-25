@@ -1,1 +1,8 @@
-{}
+{
+    "Navbar": {
+        "bikes": "bikes",
+        "pedals": "pedals",
+        "apparel": "apparel",
+        "components": "components"
+    }
+}
