@@ -4,5 +4,8 @@
         "pedals": "Pedali",
         "apparel": "Abbigliamento",
         "components": "Componenti"
+    },
+    "Hero": {
+        "new": "nuovo"
     }
 }
