@@ -7,5 +7,10 @@
     },
     "Hero": {
         "new": "neu"
+    },
+    "Reveal": {
+        "scroll": "Scrollen Sie, um es zu entdecken",
+        "presentationVideo": "VIDEO PRÄSENTATION",
+        "caption": "Das schnellste unserer Rennräder, entwickelt, um zu gewinnen."
     }
 }

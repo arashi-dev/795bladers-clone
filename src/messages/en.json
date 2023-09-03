@@ -7,5 +7,10 @@
     },
     "Hero": {
         "new": "new"
+    },
+    "Reveal": {
+        "scroll": "Scroll to discover",
+        "presentationVideo": "Presentation Video",
+        "caption": "The fastest of our racing bikes, born to win."
     }
 }

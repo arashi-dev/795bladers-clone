@@ -7,5 +7,10 @@
     },
     "Hero": {
         "new": "nuovo"
+    },
+    "Reveal": {
+        "scroll": "Scorri per scoprire",
+        "presentationVideo": "VIDEOPRESENTAZIONE",
+        "caption": "La più veloce delle nostre bici da corsa, nata per vincere."
     }
 }
