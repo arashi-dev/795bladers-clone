@@ -12,6 +12,7 @@ const ScrollText: React.FC<ScrollTextProps> = ({
   containerRef,
 }) => {
   const containerScroll = useScroll({
+    layoutEffect: false,
     target: containerRef,
     offset: ["start center", "end start"],
   });

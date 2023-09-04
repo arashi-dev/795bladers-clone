@@ -13,6 +13,7 @@ const PresentationVideo: React.FC<PresentationVideoProps> = ({
   containerRef,
 }) => {
   const containerScroll = useScroll({
+    layoutEffect: false,
     target: containerRef,
     offset: ["0.065 0", "0.6 0"],
   });

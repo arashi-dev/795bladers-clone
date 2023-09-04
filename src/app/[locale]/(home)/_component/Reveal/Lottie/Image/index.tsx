@@ -38,6 +38,7 @@ type LottieImageProps = {
 const LottieImage: React.FC<LottieImageProps> = ({ containerRef }) => {
   const containerScroll = useScroll({
     target: containerRef,
+    layoutEffect: false,
     offset: ["start center", "end start"],
   });
 
@@ -54,6 +55,7 @@ const LottieImage: React.FC<LottieImageProps> = ({ containerRef }) => {
   );
 
   const opacityScroll = useScroll({
+    layoutEffect: false,
     target: containerRef,
     offset: ["start end", "end start"],
   });
