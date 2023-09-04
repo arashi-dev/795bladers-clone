@@ -6,13 +6,11 @@ const Reveal: React.FC = () => {
   const t = useTranslations("Reveal");
 
   return (
-    <div>
-      <Lottie
-        scrollText={t("scroll")}
-        presentationVideoText={t("presentationVideo")}
-        captionText={t("caption")}
-      />
-    </div>
+    <Lottie
+      scrollText={t("scroll")}
+      presentationVideoText={t("presentationVideo")}
+      captionText={t("caption")}
+    />
   );
 };
 

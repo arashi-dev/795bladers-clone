@@ -1,22 +1,18 @@
 "use client";
 
 import { useMergedRef } from "@mantine/hooks";
-import {
-  motion,
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import React, { forwardRef, useRef } from "react";
 
 type ScrollTransitionProps = React.PropsWithChildren<{
   className?: string;
   from: number;
   to: number;
+  withOpacity?: boolean;
 }>;
 
 const ScrollTransition = forwardRef<HTMLDivElement, ScrollTransitionProps>(
-  ({ children, className, from, to }, _ref) => {
+  ({ children, className, from, to, withOpacity = false }, _ref) => {
     const ref = useRef<HTMLDivElement>(null);
 
     const mergedRef = useMergedRef(ref, _ref);
@@ -27,11 +23,14 @@ const ScrollTransition = forwardRef<HTMLDivElement, ScrollTransitionProps>(
     });
 
     const y = useTransform(scrollYProgress, [0, 1], [from, to]);
-
-    useMotionValueEvent(y, "change", console.log);
+    const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
 
     return (
-      <motion.div ref={mergedRef} style={{ y }} className={className}>
+      <motion.div
+        ref={mergedRef}
+        style={{ y, opacity: withOpacity ? opacity : 1 }}
+        className={className}
+      >
         {children}
       </motion.div>
     );

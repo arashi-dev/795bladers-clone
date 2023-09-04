@@ -3,9 +3,8 @@ import { useLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import "~/styles/globals.css";
 import Layout from "./_components/Layout";
-import clsx from "clsx";
-import { avenir } from "./_fonts";
 import LocaleProvider from "./_components/Locale";
+import Body from "./_components/Layout/Body";
 
 type LayoutProps = React.PropsWithChildren<{
   params: {
@@ -23,16 +22,11 @@ const _Layout: React.FC<LayoutProps> = ({ children, params }) => {
 
   return (
     <html lang="en">
-      <body
-        className={clsx(
-          "no-scrollbar bg-neutral-950 font-avenir",
-          avenir.variable
-        )}
-      >
+      <Body>
         <LocaleProvider locale={locale}>
           <Layout>{children}</Layout>
         </LocaleProvider>
-      </body>
+      </Body>
     </html>
   );
 };

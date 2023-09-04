@@ -60,7 +60,7 @@ const LottieImage: React.FC<LottieImageProps> = ({ containerRef }) => {
 
   const opacityMotionValue = useTransform(
     opacityScroll.scrollYProgress,
-    [0, 0.15, 0.6, 0.9],
+    [0, 0.08, 0.6, 0.9],
     [0.7, 1, 1, 0.05]
   );
 
@@ -69,13 +69,15 @@ const LottieImage: React.FC<LottieImageProps> = ({ containerRef }) => {
       style={{ opacity: opacityMotionValue }}
       className="sticky top-0 block h-screen w-full overflow-hidden"
     >
-      <Image
-        src={frames.assets[index]!.p}
-        alt=""
-        className="object-cover"
-        sizes="100vw"
-        fill
-      />
+      <div className="relative h-full w-full">
+        <Image
+          src={frames.assets[index]!.p}
+          alt=""
+          className="object-cover"
+          sizes="100vw"
+          fill
+        />
+      </div>
     </motion.div>
   );
 };
