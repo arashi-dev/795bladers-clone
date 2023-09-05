@@ -41,11 +41,11 @@ const Caption: React.FC<CaptionProps> = ({ text }) => {
   return (
     <motion.div
       ref={mergedRef}
-      className="absolute bottom-0 left-0 grid w-screen auto-rows-auto grid-cols-12 p-[8vw]"
+      className="absolute bottom-0 left-0 w-screen auto-rows-auto grid-cols-12 py-[8vw] pl-[4vw] pr-[7vw] sm:grid sm:p-[8vw]"
     >
       <p
         key={text}
-        className="whitespace-pre-wrap text-[6.3vw]/[1.2] font-bold -tracking-[.02em] text-neutral-50 grid-area-[span_1_/_span_9_/_span_1_/_span_9]"
+        className="whitespace-pre-wrap text-[14vw]/[1.2] font-bold -tracking-[.02em] text-neutral-50 grid-area-[span_1_/_span_9_/_span_1_/_span_9] sm:text-[6.3vw]/[1.2]"
       >
         {words.map((word, i) => (
           <span
