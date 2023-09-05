@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useRef } from "react";
-import LottieImage from "./Image";
 import ScrollText from "./ScrollText";
 import PresentationVideo from "./PresentationVideo";
 import Caption from "./Caption";
+import dynamic from "next/dynamic";
+
+const LottieImage = dynamic(() => import("./Image"), { ssr: true });
 
 type LottieProps = {
   scrollText: string;

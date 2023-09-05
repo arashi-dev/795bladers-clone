@@ -14,7 +14,7 @@ type Frame = {
   h: number;
   u: string;
   p: string;
-  e: string;
+  e: number;
 };
 
 type Frames = {
