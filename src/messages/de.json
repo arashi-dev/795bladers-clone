@@ -12,5 +12,20 @@
         "scroll": "Scrollen Sie, um es zu entdecken",
         "presentationVideo": "VIDEO PRÄSENTATION",
         "caption": "Das schnellste unserer Rennräder, entwickelt, um zu gewinnen."
+    },
+    "Argumentation": {
+        "1": {
+            "smallText": "Die schärfste Klinge in unserem Arsenal, eine kompromisslose Maschine für den Wettkampf.",
+            "text": "Aero"
+        },
+        "2": {
+            "text": "Reagens"
+        },
+        "3": {
+            "text": "Licht"
+        },
+        "4": {
+            "text": "Fasten"
+        }
     }
 }

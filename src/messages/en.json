@@ -12,5 +12,20 @@
         "scroll": "Scroll to discover",
         "presentationVideo": "Presentation Video",
         "caption": "The fastest of our racing bikes, born to win."
+    },
+    "Argumentation": {
+        "1": {
+            "smallText": "Its incredible performance pedigree is the result of meticulous development, carried out hand-in-hand with our professional riders",
+            "text": "Sharp"
+        },
+        "2": {
+            "text": "Powerful"
+        },
+        "3": {
+            "text": "Light"
+        },
+        "4": {
+            "text": "Fast"
+        }
     }
 }

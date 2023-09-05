@@ -12,5 +12,20 @@
         "scroll": "Scroller pour découvrir",
         "presentationVideo": "Présentation vidéo",
         "caption": "Le plus rapide de nos vélos de compétition, né pour tout gagner."
+    },
+    "Argumentation": {
+        "1": {
+            "smallText": "La lame la plus tranchante de notre arsenal, une machine sans compromis dédiée à la compétition.",
+            "text": "Aéro"
+        },
+        "2": {
+            "text": "Réactif"
+        },
+        "3": {
+            "text": "Léger"
+        },
+        "4": {
+            "text": "Rapide"
+        }
     }
 }

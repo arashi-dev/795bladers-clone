@@ -12,5 +12,20 @@
         "scroll": "Scorri per scoprire",
         "presentationVideo": "VIDEOPRESENTAZIONE",
         "caption": "La più veloce delle nostre bici da corsa, nata per vincere."
+    },
+    "Argumentation": {
+        "1": {
+            "smallText": "La lama più affilata del nostro arsenale, una macchina senza compromessi dedicata alla competizione.",
+            "text": "Aero"
+        },
+        "2": {
+            "text": "Reattivo"
+        },
+        "3": {
+            "text": "Leggero"
+        },
+        "4": {
+            "text": "Veloce"
+        }
     }
 }

@@ -12,5 +12,20 @@
         "scroll": "Desplácese para descubrir",
         "presentationVideo": "PRESENTACIÓN DE VIDEO",
         "caption": "Nuestra bici de competición más rápida, nacida para ganar."
+    },
+    "Argumentation": {
+        "1": {
+            "smallText": "La hoja más afilada de nuestro arsenal, una máquina intransigente dedicada a la competición.",
+            "text": "Luz"
+        },
+        "2": {
+            "text": "Reactivo"
+        },
+        "3": {
+            "text": "Dinámico"
+        },
+        "4": {
+            "text": "Rápido"
+        }
     }
 }
