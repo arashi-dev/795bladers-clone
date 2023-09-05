@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
   motion,
   useMotionValueEvent,
@@ -36,6 +36,9 @@ type LottieImageProps = {
 };
 
 const LottieImage: React.FC<LottieImageProps> = ({ containerRef }) => {
+  const imagesRef = useRef(
+    new Array<HTMLImageElement | null>(frames.assets.length).fill(null)
+  );
   const containerScroll = useScroll({
     target: containerRef,
     layoutEffect: false,
@@ -66,19 +69,37 @@ const LottieImage: React.FC<LottieImageProps> = ({ containerRef }) => {
     [0.7, 1, 1, 0.05]
   );
 
+  useEffect(() => {
+    imagesRef.current.forEach((img) => img && (img.style.display = "none"));
+
+    const target = imagesRef.current[index];
+
+    if (target) {
+      target.style.display = "block";
+    }
+  }, [index]);
+
   return (
     <motion.div
       style={{ opacity: opacityMotionValue }}
       className="sticky top-0 block h-screen w-full overflow-hidden"
     >
       <div className="relative h-full w-full">
-        <Image
-          src={frames.assets[index]!.p}
-          alt=""
-          className="object-cover"
-          sizes="100vw"
-          fill
-        />
+        {useMemo(
+          () =>
+            frames.assets.map((img, i) => (
+              <Image
+                key={img.id}
+                ref={(ref) => (imagesRef.current[i] = ref)}
+                src={img.p}
+                alt=""
+                className="hidden object-cover"
+                sizes="100vw"
+                fill
+              />
+            )),
+          []
+        )}
       </div>
     </motion.div>
   );
