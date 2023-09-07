@@ -3,8 +3,8 @@
 import React, { useRef } from "react";
 import ScrollText from "./ScrollText";
 import PresentationVideo from "./PresentationVideo";
-import Caption from "./Caption";
 import dynamic from "next/dynamic";
+import Text from "../../Text";
 
 const LottieImage = dynamic(() => import("./Image"), { ssr: true });
 
@@ -32,7 +32,7 @@ const Lottie: React.FC<LottieProps> = ({
         text={presentationVideoText}
       />
 
-      <Caption text={captionText} />
+      <Text text={captionText} className="absolute bottom-0 left-0" />
     </div>
   );
 };
