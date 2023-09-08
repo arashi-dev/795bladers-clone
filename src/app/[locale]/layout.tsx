@@ -5,6 +5,7 @@ import "~/styles/globals.css";
 import Layout from "./_components/Layout";
 import LocaleProvider from "./_components/Locale";
 import Body from "./_components/Layout/Body";
+import CursorProvider from "./_components/Cursor";
 
 type LayoutProps = React.PropsWithChildren<{
   params: {
@@ -24,7 +25,9 @@ const _Layout: React.FC<LayoutProps> = ({ children, params }) => {
     <html lang="en">
       <Body>
         <LocaleProvider locale={locale}>
-          <Layout>{children}</Layout>
+          <CursorProvider>
+            <Layout>{children}</Layout>
+          </CursorProvider>
         </LocaleProvider>
       </Body>
     </html>
