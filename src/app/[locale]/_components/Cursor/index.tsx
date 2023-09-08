@@ -33,7 +33,7 @@ const CursorProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
       <div
         style={{ left: x, top: y }}
         className={clsx(
-          "fixed z-[9999] flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white transition",
+          "pointer-events-none fixed z-[9999] flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white transition",
           {
             "opacity-0": x === 0 && y === 0,
             "scale-[.2]": cursor === "default",
@@ -41,7 +41,7 @@ const CursorProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
           }
         )}
       >
-        {cursor === "drag-x" && <BiExpandHorizontal />}
+        {cursor === "drag-x" && <BiExpandHorizontal className="text-2xl" />}
       </div>
 
       {children}
