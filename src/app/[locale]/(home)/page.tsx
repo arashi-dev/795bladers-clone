@@ -5,6 +5,7 @@ import ScrollTransition from "../_components/ScrollTransition";
 import Argumentation from "./_component/Argumentation";
 import Text from "./_component/Text";
 import { useTranslations } from "next-intl";
+import Carousel from "./_component/Carousel";
 
 const Page = () => {
   const t = useTranslations("Cofidis");
@@ -20,6 +21,8 @@ const Page = () => {
       <Argumentation />
 
       <Text text={t("text")} />
+
+      <Carousel />
 
       <div className="block h-screen" />
     </>
