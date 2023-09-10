@@ -30,5 +30,14 @@
     },
     "Cofidis": {
         "text": "Si sólo pudiese existir una bici, sería ésta. La mejor máquina para competición, la bici más rápida que jamás haya salido de nuestros talleres."
+    },
+    "Why": {
+        "reasons": {
+            "1": "Bici completa de sólo 7 kg, situándose entre las más ligeras de su categoría y dejando atrás a la competencia de una vez por todas.",
+            "2": "Cuadro y componentes aerodinámicamente optimizados gracias a las exhaustivas pruebas realizadas en el túnel de viento, permitiendo rodar muy muy rápido.",
+            "3": "Cockpit de carbono totalmente integrado, con una mejor aerodinámica y perfecta ergonomía, que otorga precisión."
+        },
+        "largeText": "La 795 BladeRS sediseñó para ganar, y respondió a su cometido en su primera aparición UCI WordTour",
+        "smallText": "A lo largo del desarrollo pudimos contar con los pilotos profesionales del equipo Cofidis para ayudarnos a poner a punto la 795 BladeRS."
     }
 }

@@ -30,5 +30,14 @@
     },
     "Cofidis": {
         "text": "S’il ne devait en rester qu’un, ce serait lui. Le vélo de compétition ultime, le plus rapide jamais sorti de nos ateliers."
+    },
+    "Why": {
+        "reasons": {
+            "1": "Un vélo complet à 7 kg, parmi les plus légers de sa catégorie, pour lâcher définitivement la concurrence.",
+            "2": "Un cadre et des composants à l’aérodynamisme optimisé par un travail minutieux en soufflerie : pour rouler vite, très vite.",
+            "3": "Un cockpit intégré en carbone, aérodynamisme optimisé et ergonomie parfaite, pour un pilotage précis."
+        },
+        "largeText": "Nous avons conçu le 795 BladeRS pour gagner, ce qu’il a fait dès ses premières sorties sur l’UCI WorldTour",
+        "smallText": "Tout au long du développement nous avons pu compter sur les coureurs professionnels de l’équipe Cofidis pour nous aider à peaufiner le 795 Blade"
     }
 }

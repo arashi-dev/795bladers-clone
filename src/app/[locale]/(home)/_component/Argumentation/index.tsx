@@ -2,7 +2,7 @@ import React from "react";
 import ArgumentContainer from "./ArgumentContainer";
 import ArgumentText from "./ArgumentText";
 import { useTranslations } from "next-intl";
-import Container from "./Container";
+import Container from "../../../_components/Container";
 import dynamic from "next/dynamic";
 import ScrollTransition from "~/app/[locale]/_components/ScrollTransition";
 
@@ -12,7 +12,7 @@ const Argumentation: React.FC = () => {
   const t = useTranslations("Argumentation");
 
   return (
-    <Container>
+    <Container className="relative my-[20vh] h-screen justify-between">
       <ScrollTransition
         from={-150}
         to={50}

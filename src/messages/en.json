@@ -30,5 +30,14 @@
     },
     "Cofidis": {
         "text": "If there were to be just one bike, this would be it. The ultimate racing machine, the fastest bike to ever come out of our workshops."
+    },
+    "Why": {
+        "reasons": {
+            "1": "Exceptional lightness: a fully-built, race-ready bike weighing just 7 kg",
+            "2": "Aerodynamically-optimized frame and components thanks to in-depth wind tunnel testing, making for very, very fast riding.",
+            "3": "A fully-integrated carbon cockpit with optimized aerodynamics and perfect ergonomics for precise handling."
+        },
+        "largeText": "The 795 BladeRS was designed to win, and it answered its calling on its very first UCI World Tour",
+        "smallText": "Throughout the development we were able to count on the professional riders of the Cofidis team to help us fine-tune the 795 BladeRS."
     }
 }

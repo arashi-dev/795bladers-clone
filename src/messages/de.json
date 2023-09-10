@@ -30,5 +30,14 @@
     },
     "Cofidis": {
         "text": "Wenn es nur ein einziges Fahrrad gäbe, dann wäre es dieses. Die ultimative Rennmaschine, das schnellste Rennrad, das je aus unseren Werkstätten kam."
+    },
+    "Why": {
+        "reasons": {
+            "1": "Mit nur 7 kg für das komplett aufgebaute Rad gehört es zu den leichtesten seiner Kategorie, um die Konkurrenz ein für alle Mal abzuschütteln.",
+            "2": "Ein aerodynamisch optimierter Rahmen und Komponenten dank eingehender Windkanaltests, die ein sehr, sehr schnelles Fahren möglich machen.",
+            "3": "Ein vollständig integriertes Carbon-Cockpit mit optimierter Aerodynamik und perfekter Ergonomie für ein präzises Handling."
+        },
+        "largeText": "Das 795 BladeRS wurde entwickelt, um zu gewinnen, und es hat seine Berufung bei seinen ersten UCI World Tour",
+        "smallText": "Während der gesamten Entwicklung konnten wir auf die professionellen Fahrer des Cofidis-Teams zählen, die uns bei der Feinabstimmung des 795 BladeRS unterstützten."
     }
 }

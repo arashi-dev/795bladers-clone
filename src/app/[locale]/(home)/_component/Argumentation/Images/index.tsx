@@ -24,7 +24,7 @@ import {
   useMouse,
   useViewportSize,
 } from "@mantine/hooks";
-import { useContainerRef } from "../Container";
+import { useContainerRef } from "../../../../_components/Container";
 
 type Frame = {
   id: string;
