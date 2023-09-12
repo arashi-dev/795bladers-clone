@@ -7,6 +7,7 @@ import Text from "./_component/Text";
 import { useTranslations } from "next-intl";
 import Carousel from "./_component/Carousel";
 import Why from "./_component/Why";
+import Photos from "./_component/Photos";
 
 const Page = () => {
   const t = useTranslations("Cofidis");
@@ -26,6 +27,8 @@ const Page = () => {
       <Carousel />
 
       <Why />
+
+      <Photos />
 
       <div className="block h-screen" />
     </>
