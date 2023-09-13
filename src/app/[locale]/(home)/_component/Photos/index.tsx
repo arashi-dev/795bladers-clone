@@ -7,7 +7,7 @@ import Image3 from "./3.jpg";
 
 const Photos: React.FC = () => {
   return (
-    <div className="relative flex h-max flex-col pt-[50vh]">
+    <div className="relative flex h-max flex-col">
       <Photo imageSrc={Image1} rotation={-12} />
       <Photo imageSrc={Image2} rotation={12} />
       <Photo imageSrc={Image3} rotation={14} />
