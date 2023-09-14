@@ -39,5 +39,76 @@
         },
         "largeText": "Das 795 BladeRS wurde entwickelt, um zu gewinnen, und es hat seine Berufung bei seinen ersten UCI World Tour",
         "smallText": "Während der gesamten Entwicklung konnten wir auf die professionellen Fahrer des Cofidis-Teams zählen, die uns bei der Feinabstimmung des 795 BladeRS unterstützten."
+    },
+    "Specs": {
+        "title": "Technische Spezifikationen",
+        "byLook": {
+            "title": "Made By Look",
+            "seatpost": {
+                "title": "Sattelstütze",
+                "description": "LOOK AEROPOST 4 CARBON seatpost, D-shape, Length 350mm, 13.5mm offset. Weight: 160gr."
+            },
+            "saddle": {
+                "title": "Sattel",
+                "description": "SELLE ITALIA SLR BOOST SUPERFLOW CARBON"
+            },
+            "handlebar": {
+                "title": "Lenker",
+                "description": "LOOK COMBO AERO CARBON (XXS:38 XS/S:40 M/L:42 XL:44)"
+            },
+            "stem": {
+                "title": "Vorbau",
+                "description": "LOOK Combo Aero Carbon stem. Angle -7°. Weight: 140gr. Full integration. (Length: XXS: 80mm XS: 90mm S: 100mm M/L: 110mm XL: 120mm)"
+            }
+        },
+        "wheels": {
+            "title": "Räder",
+            "wheels": {
+                "title": "Räder                ",
+                "description": "CORIMA 47 mm MCC EVO CLINCHER"
+            },
+            "tires": {
+                "title": "Reifen",
+                "description": "CONTINENTAL GP 5000 tubetype 700x25"
+            }
+        },
+        "transmissionAndBrakes": {
+            "title": "Getriebe & Bremsen",
+            "chain": {
+                "title": "Schalthebel",
+                "description": "CAMPAGNOLO ERGOPOWER WIRELESS"
+            },
+            "crankset": {
+                "title": "Bremsen",
+                "description": "CAMPAGNOLO SUPER RECORD DISC FLAT MOUNT"
+            },
+            "bottomBracket": {
+                "title": "Tretlager",
+                "description": "BB T47 CAMPAGNOLO T47x86"
+            },
+            "cassette": {
+                "title": "Cassette",
+                "description": "CAMPAGNOLO SUPER RECORD 12s 10x29"
+            },
+            "shifters": {
+                "title": "Kurbel",
+                "description": "CAMPAGNOLO SUPER RECORD Pro T Carbon 50 x 34 (XXS : 165 mm – XS / S : 170 mm - M / L 172,5 mm - XL : 175 mm)"
+            },
+            "derailleurs": {
+                "title": "Umwerfer",
+                "description": "CAMPAGNOLO SUPER RECORD WIRELESS"
+            },
+            "brakes": {
+                "title": "Kassette",
+                "description": "CAMPAGNOLO SUPER RECORD 12s 10x29"
+            }
+        },
+        "size": {
+            "title": "Tailles",
+            "size": {
+                "title": "Tailles",
+                "description": "XS - S - M - L - XL"
+            }
+        }
     }
 }

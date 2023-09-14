@@ -51,7 +51,7 @@ const Body: React.FC<React.PropsWithChildren> = ({ children }) => {
     <body
       ref={bodyRef}
       className={clsx(
-        "no-scrollbar bg-neutral-950 font-avenir",
+        "no-scrollbar bg-[#0d0d0d] font-avenir",
         avenir.variable
       )}
     >
