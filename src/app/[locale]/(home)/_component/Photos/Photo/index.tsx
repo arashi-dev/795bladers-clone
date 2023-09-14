@@ -41,7 +41,7 @@ const Photo: React.FC<PhotoProps> = ({ imageSrc, rotation }) => {
         <Image
           src={imageSrc}
           alt=""
-          className="max-h-[70vh] w-auto max-w-[50vw]"
+          className="max-h-[70vh] w-auto max-w-[110vw] object-cover sm:max-w-[50vw]"
         />
       </motion.div>
     </div>
