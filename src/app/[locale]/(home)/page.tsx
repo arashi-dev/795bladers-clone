@@ -9,6 +9,7 @@ import Carousel from "./_component/Carousel";
 import Why from "./_component/Why";
 import Photos from "./_component/Photos";
 import Specs from "./_component/Specs";
+import Products from "./_component/Products";
 
 const Page = () => {
   const t = useTranslations("Cofidis");
@@ -32,6 +33,8 @@ const Page = () => {
       <Photos />
 
       <Specs />
+
+      <Products />
 
       <div className="block h-screen" />
     </>
