@@ -112,6 +112,8 @@
         }
     },
     "Products": {
-        "text": "Disponible en 4 versions, de la plus exclusive à la plus radicale"
+        "text": "Disponible en 4 versions, de la plus exclusive à la plus radicale",
+        "slogan": "Rapide. Partout",
+        "discover": "Découvrir"
     }
 }

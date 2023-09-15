@@ -4,8 +4,9 @@ import { useMouse } from "@mantine/hooks";
 import clsx from "clsx";
 import React, { createContext, useContext, useMemo, useState } from "react";
 import { BiExpandHorizontal } from "react-icons/bi";
+import { BsArrowRight } from "react-icons/bs";
 
-type Cursors = "default" | "drag-x";
+type Cursors = "default" | "drag-x" | "to-right";
 
 const CursorContext = createContext<{
   setCursor: React.Dispatch<React.SetStateAction<Cursors>>;
@@ -37,11 +38,12 @@ const CursorProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
           {
             "opacity-0": x === 0 && y === 0,
             "scale-[.2]": cursor === "default",
-            "scale-100": cursor === "drag-x",
+            "scale-100": cursor === "drag-x" || cursor === "to-right",
           }
         )}
       >
         {cursor === "drag-x" && <BiExpandHorizontal className="text-2xl" />}
+        {cursor === "to-right" && <BsArrowRight className="text-2xl" />}
       </div>
 
       {children}

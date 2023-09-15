@@ -35,8 +35,6 @@ const Page = () => {
       <Specs />
 
       <Products />
-
-      <div className="block h-screen" />
     </>
   );
 };

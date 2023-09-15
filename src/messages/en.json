@@ -112,6 +112,8 @@
         }
     },
     "Products": {
-        "text": "Available in 4 versions, from the most exclusive to the most radical"
+        "text": "Available in 4 versions, from the most exclusive to the most radical",
+        "slogan": "Fast. Everywhere.",
+        "discover": "Discover"
     }
 }
