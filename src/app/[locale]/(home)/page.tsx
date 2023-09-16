@@ -10,6 +10,20 @@ import Why from "./_component/Why";
 import Photos from "./_component/Photos";
 import Specs from "./_component/Specs";
 import Products from "./_component/Products";
+import { type Metadata } from "next";
+import { getTranslator } from "next-intl/server";
+
+export const generateMetadata = async ({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> => {
+  const t = await getTranslator(locale, "Products");
+
+  return {
+    title: `795 Blade RS | ${t("slogan")} - LOOK Cycle`,
+  };
+};
 
 const Page = () => {
   const t = useTranslations("Cofidis");
