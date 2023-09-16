@@ -115,5 +115,10 @@
         "text": "Disponibile in 4 versioni, dalla più esclusiva alla più radicale",
         "slogan": "Veloce. Ovunque",
         "discover": "Scoprire"
+    },
+    "Loading": {
+        "new": "nuovo",
+        "loading": "Caricamento in corso…",
+        "wait": "Attendi per scoprire la nostra nuova bici da corsa."
     }
 }

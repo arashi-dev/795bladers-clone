@@ -115,5 +115,10 @@
         "text": "Erhältlich in 4 Versionen, von exklusiv bis radikal",
         "slogan": "Schnell. Überall",
         "discover": "Entdecken"
+    },
+    "Loading": {
+        "new": "neu",
+        "loading": "Laden...",
+        "wait": "Bitte warten Sie, um unser neues Rennrad zu entdecken."
     }
 }

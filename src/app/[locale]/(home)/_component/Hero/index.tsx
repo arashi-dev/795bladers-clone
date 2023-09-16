@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   const t = useTranslations("Hero");
 
   return (
-    <div className="static flex h-[80vh] w-full flex-col items-center justify-center pt-[4.5rem]">
+    <div className="static flex h-[80vh] w-full flex-col items-center justify-center">
       <p className="mb-[10vh] flex h-14 items-center justify-center rounded-full border border-zinc-800 px-10 text-sm font-bold uppercase tracking-widest text-white">
         {t("new")}
       </p>

@@ -115,5 +115,10 @@
         "text": "Disponible en 4 versiones, desde la más exclusiva a la más radical",
         "slogan": "Rápida. En cualquier lugar.",
         "discover": "Descubrir"
+    },
+    "Loading": {
+        "new": "nuevo",
+        "loading": "Cargando... ",
+        "wait": "Espera a descubrir nuestra nueva bicicleta de carreras."
     }
 }

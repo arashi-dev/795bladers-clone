@@ -115,5 +115,10 @@
         "text": "Disponible en 4 versions, de la plus exclusive à la plus radicale",
         "slogan": "Rapide. Partout",
         "discover": "Découvrir"
+    },
+    "Loading": {
+        "new": "nouveau",
+        "loading": "Chargement en cours…",
+        "wait": "Veuillez patienter pour découvrir notre nouveau vélo de course."
     }
 }

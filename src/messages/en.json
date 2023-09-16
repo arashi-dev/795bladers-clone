@@ -115,5 +115,10 @@
         "text": "Available in 4 versions, from the most exclusive to the most radical",
         "slogan": "Fast. Everywhere.",
         "discover": "Discover"
+    },
+    "Loading": {
+        "new": "new",
+        "loading": "Loading…",
+        "wait": "Please wait to discover our new racing bike."
     }
 }

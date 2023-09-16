@@ -30,7 +30,7 @@ const Page = () => {
 
   return (
     <>
-      <ScrollTransition from={-300} to={300}>
+      <ScrollTransition from={-390} to={380} withOpacity className="relative -z-10">
         <Hero />
       </ScrollTransition>
 
