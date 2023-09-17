@@ -6,7 +6,7 @@ import Container from "../../../_components/Container";
 import dynamic from "next/dynamic";
 import ScrollTransition from "~/app/[locale]/_components/ScrollTransition";
 
-const Images = dynamic(() => import("./Images"));
+const Images = dynamic(() => import("./Images"), { ssr: false });
 
 const Argumentation: React.FC = () => {
   const t = useTranslations("Argumentation");

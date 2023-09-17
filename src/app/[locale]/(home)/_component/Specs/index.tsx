@@ -4,7 +4,7 @@ import List from "./List";
 import Container from "~/app/[locale]/_components/Container";
 import dynamic from "next/dynamic";
 
-const Images = dynamic(() => import("./Images"));
+const Images = dynamic(() => import("./Images"), { ssr: false });
 
 const Specs: React.FC = () => {
   const t = useTranslations("Specs");

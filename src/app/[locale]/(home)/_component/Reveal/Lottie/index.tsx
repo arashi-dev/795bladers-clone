@@ -6,7 +6,7 @@ import PresentationVideo from "./PresentationVideo";
 import dynamic from "next/dynamic";
 import Text from "../../Text";
 
-const LottieImage = dynamic(() => import("./Image"), { ssr: true });
+const LottieImage = dynamic(() => import("./Image"), { ssr: false });
 
 type LottieProps = {
   scrollText: string;

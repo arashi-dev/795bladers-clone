@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import Text from "../Text";
 import dynamic from "next/dynamic";
 
-const WhyImage = dynamic(() => import("./Image"));
+const WhyImage = dynamic(() => import("./Image"), { ssr: false });
 
 const Why: React.FC = () => {
   const t = useTranslations("Why");
