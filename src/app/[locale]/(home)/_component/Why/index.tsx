@@ -1,9 +1,11 @@
 import React from "react";
-import WhyImage from "./Image";
 import Container from "~/app/[locale]/_components/Container";
 import Reason from "./Reason";
 import { useTranslations } from "next-intl";
 import Text from "../Text";
+import dynamic from "next/dynamic";
+
+const WhyImage = dynamic(() => import("./Image"));
 
 const Why: React.FC = () => {
   const t = useTranslations("Why");
@@ -12,6 +14,7 @@ const Why: React.FC = () => {
       <div className="absolute left-0 top-0 h-full w-full">
         <WhyImage />
       </div>
+
       <div className="relative flex h-max w-full flex-col pt-[100vh]">
         <div className="flex flex-col gap-y-[150vh]">
           <Reason index={0}>{t("reasons.1")}</Reason>

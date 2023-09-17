@@ -1,8 +1,10 @@
 import React from "react";
-import Images from "./Images";
 import { useTranslations } from "next-intl";
 import List from "./List";
 import Container from "~/app/[locale]/_components/Container";
+import dynamic from "next/dynamic";
+
+const Images = dynamic(() => import("./Images"));
 
 const Specs: React.FC = () => {
   const t = useTranslations("Specs");
