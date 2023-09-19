@@ -22,7 +22,7 @@ const _Layout: React.FC<LayoutProps> = ({ children, params }) => {
   }
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <Body>
         <LocaleProvider locale={locale}>
           <CursorProvider>
