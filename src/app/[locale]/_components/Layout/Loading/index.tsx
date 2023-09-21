@@ -16,12 +16,8 @@ const Loading: React.FC<LoadingProps> = ({
 }) => {
   return (
     <motion.div
-      initial="initial"
-      animate="animate"
-      variants={{
-        initial: { opacity: 1 },
-        animate: { opacity: 0, transitionEnd: { display: "none" } },
-      }}
+      initial={{ opacity: 1 }}
+      animate={{ opacity: 0, transitionEnd: { display: "none" } }}
       transition={{ delay: 0.5, duration: 0.2, ease: "easeInOut" }}
       className="fixed bottom-0 left-0 right-0 top-0 z-[10000] flex flex-col items-center justify-center gap-y-[10vh] bg-[#0d0d0d]"
     >
@@ -36,9 +32,14 @@ const Loading: React.FC<LoadingProps> = ({
         </p>
       </div>
 
-      <div className="block h-24" />
+      <div className="relative w-screen h-max gap-y-8 flex flex-col">
+        <div className="animate-[loaderWhite_3s_infinite_ease-in-out] bg-white h-px relative -translate-x-full w-[15vw]" />
+        <div className="animate-[loaderBlue_2s_infinite_ease-in-out] bg-blue-700 h-px relative -translate-x-full w-[15vw]" />
+        <div className="animate-[loaderYellow_2s_.5s_infinite_ease-in-out] bg-yellow-400 h-px relative w-[10vw] -translate-x-full" />
+        <div className="animate-[loaderRed_2s_1.7s_infinite_ease-in-out] bg-red-600 h-px relative w-[15vw] -translate-x-full" />
+      </div>
 
-      <div className="max-w-xs text-center text-neutral-400">
+      <div className="max-w-xs text-center text-neutral-400 animate-pulse">
         <p>{loadingText}</p>
         <p>{waitText}</p>
       </div>
