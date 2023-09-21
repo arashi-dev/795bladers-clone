@@ -17,7 +17,7 @@ const Loading: React.FC<LoadingProps> = ({
   return (
     <motion.div
       initial={{ opacity: 1 }}
-      animate={{ opacity: 0, transitionEnd: { display: "none" } }}
+      // animate={{ opacity: 0, transitionEnd: { display: "none" } }}
       transition={{ delay: 0.5, duration: 0.2, ease: "easeInOut" }}
       className="fixed bottom-0 left-0 right-0 top-0 z-[10000] flex flex-col items-center justify-center gap-y-[10vh] bg-[#0d0d0d]"
     >
@@ -33,10 +33,10 @@ const Loading: React.FC<LoadingProps> = ({
       </div>
 
       <div className="relative w-screen h-max gap-y-8 flex flex-col">
-        <div className="animate-[loaderWhite_3s_infinite_ease-in-out] bg-white h-px relative -translate-x-full w-[15vw]" />
-        <div className="animate-[loaderBlue_2s_infinite_ease-in-out] bg-blue-700 h-px relative -translate-x-full w-[15vw]" />
-        <div className="animate-[loaderYellow_2s_.5s_infinite_ease-in-out] bg-yellow-400 h-px relative w-[10vw] -translate-x-full" />
-        <div className="animate-[loaderRed_2s_1.7s_infinite_ease-in-out] bg-red-600 h-px relative w-[15vw] -translate-x-full" />
+        <div className="animate-[loaderWhite_3s_infinite_ease-in-out] shadow-[0_0_3px] block shadow-white bg-white h-px relative -translate-x-full w-[15vw]" />
+        <div className="animate-[loaderBlue_2s_infinite_ease-in-out] shadow-[0_0_3px] block shadow-blue-700 bg-blue-700 h-px relative -translate-x-full w-[15vw]" />
+        <div className="animate-[loaderYellow_2s_.5s_infinite_ease-in-out] shadow-[0_0_3px] block shadow-yellow-400 bg-yellow-400 h-px relative w-[10vw] -translate-x-full" />
+        <div className="animate-[loaderRed_2s_1.7s_infinite_ease-in-out] shadow-[0_0_3px] block shadow-red-600 bg-red-600 h-px relative w-[15vw] -translate-x-full" />
       </div>
 
       <div className="max-w-xs text-center text-neutral-400 animate-pulse">
