@@ -17,7 +17,7 @@ const Loading: React.FC<LoadingProps> = ({
   return (
     <motion.div
       initial={{ opacity: 1 }}
-      // animate={{ opacity: 0, transitionEnd: { display: "none" } }}
+      animate={{ opacity: 0, transitionEnd: { display: "none" } }}
       transition={{ delay: 0.5, duration: 0.2, ease: "easeInOut" }}
       className="fixed bottom-0 left-0 right-0 top-0 z-[10000] flex flex-col items-center justify-center gap-y-[10vh] bg-[#0d0d0d]"
     >
