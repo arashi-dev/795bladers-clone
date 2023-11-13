@@ -11,14 +11,14 @@ import Photos from "./_component/Photos";
 import Specs from "./_component/Specs";
 import Products from "./_component/Products";
 import { type Metadata } from "next";
-import { getTranslator } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 export const generateMetadata = async ({
   params: { locale },
 }: {
   params: { locale: string };
 }): Promise<Metadata> => {
-  const t = await getTranslator(locale, "Products");
+  const t = await getTranslations({ locale, namespace: "Products" });
 
   return {
     title: `795 Blade RS | ${t("slogan")} - LOOK Cycle`,
@@ -30,7 +30,12 @@ const Page = () => {
 
   return (
     <>
-      <ScrollTransition from={-390} to={380} withOpacity className="relative -z-10">
+      <ScrollTransition
+        from={-390}
+        to={380}
+        withOpacity
+        className="relative -z-10"
+      >
         <Hero />
       </ScrollTransition>
 

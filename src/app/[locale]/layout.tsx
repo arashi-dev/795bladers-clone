@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import "~/styles/globals.css";
 import Layout from "./_components/Layout";
@@ -13,13 +12,10 @@ type LayoutProps = React.PropsWithChildren<{
   };
 }>;
 
-const _Layout: React.FC<LayoutProps> = ({ children, params }) => {
-  const locale = useLocale();
+const locales = ["en", "fr", "de", "it", "es"];
 
-  // Show a 404 error if the user requests an unknown locale
-  if (params.locale !== locale) {
-    notFound();
-  }
+const _Layout: React.FC<LayoutProps> = ({ children, params: { locale } }) => {
+  if (!locales.includes(locale)) notFound();
 
   return (
     <html lang={locale}>

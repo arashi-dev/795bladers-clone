@@ -2,12 +2,11 @@
 
 import React from "react";
 import clsx from "clsx";
-import Link from "next-intl/link";
-import { usePathname } from "next-intl/client";
 import { useAppLocale } from "~/app/[locale]/_components/Locale";
+import { Link, type Locales, usePathname } from "~/utils/navigation";
 
 type LocaleItemProps = React.PropsWithChildren<{
-  targetLocale: string;
+  targetLocale: Locales;
 }>;
 
 const LocaleItem: React.FC<LocaleItemProps> = ({ targetLocale, children }) => {
@@ -22,7 +21,7 @@ const LocaleItem: React.FC<LocaleItemProps> = ({ targetLocale, children }) => {
         "block px-5 py-[0.625rem] transition duration-200 hover:opacity-100",
         {
           "opacity-60": targetLocale !== locale,
-        }
+        },
       )}
     >
       {children}

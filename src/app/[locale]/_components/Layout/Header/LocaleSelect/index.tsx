@@ -6,6 +6,7 @@ import LocaleItem from "./LocaleItem";
 import { AnimatePresence, motion } from "framer-motion";
 import { useAppLocale } from "../../../Locale";
 import { useClickOutside } from "@mantine/hooks";
+import { type Locales } from "~/utils/navigation";
 
 const locales = [
   { label: "Français", locale: "fr" },
@@ -13,13 +14,13 @@ const locales = [
   { label: "Deutsch", locale: "de" },
   { label: "Italiano", locale: "it" },
   { label: "Español", locale: "es" },
-];
+] satisfies { label: string; locale: Locales }[];
 
 const LocaleSelect: React.FC = () => {
   const { locale } = useAppLocale();
   const [isOpen, setIsOpen] = useState(false);
   const listRef = useClickOutside<HTMLUListElement>(
-    useCallback(() => setIsOpen(false), [])
+    useCallback(() => setIsOpen(false), []),
   );
 
   return (
